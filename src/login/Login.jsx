@@ -1,22 +1,32 @@
 import { useState } from "react";
 import "./style-login.css";
-import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 import { Stack, Typography } from "@mui/material";
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 function Login() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-    <Paper elevation={2} sx={{padding: "10px 30px 20px"}}>
-      
-      <Typography fontSize={"32px"}>LevitApp</Typography>
+    <Box
+    sx={{
+      width: 380,
+      maxWidth: "100%",
+      height: 300
+    }}>
+    <Typography id='title' fontSize={"32px"}>LOGIN</Typography>
+    <br />
       <Stack>
-        <TextField id="outlined_input" label="email" variant="outlined"/>
-        <TextField id="outlined_input" label="password" variant="outlined"/>
+        <TextField fullWidth className="outlined_input" label="email" variant="filled"/>
+        <br />
+        <TextField fullWidth type="password"  className="outlined_input" label="password" variant="filled"/>
+        <br />
+        <Button id="button" fullWidth variant="contained">Entrar</Button>
       </Stack>
-    </Paper>
+    </Box>
+    <img src="./images/levit.png" alt="" />
     </>
   );
 }
