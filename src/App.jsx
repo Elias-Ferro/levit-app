@@ -14,13 +14,6 @@ function App() {
   return (
     <>
       <div>
-        <h1 className="title">CADASTRO</h1>
-        <label htmlFor="email">email</label>
-        <input type="email" name="email" id="email" />
-        <label htmlFor="password">password</label>
-        <input type="password" name="password" id="password" />
-      </div>
-      <div>
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
