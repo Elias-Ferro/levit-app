@@ -8,7 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import { Stack, Box } from "@mui/material";
 
-function App() {
+function Home() {
   const [count, setCount] = useState(0);
 
   return (
@@ -93,4 +93,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

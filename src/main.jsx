@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import Home from './Home.jsx'
 import RoutesComponent from './Routes.jsx'
 import './index.css'
 
