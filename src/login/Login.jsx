@@ -10,12 +10,7 @@ function Login() {
 
   return (
     <>
-    <Box
-    sx={{
-      width: 380,
-      maxWidth: "100%",
-      height: 300
-    }}>
+    <Box id="all">
     <Typography id='title' fontSize={"32px"}>LOGIN</Typography>
     <br />
       <Stack>
@@ -24,9 +19,14 @@ function Login() {
         <TextField fullWidth type="password"  className="outlined_input" label="password" variant="filled"/>
         <br />
         <Button id="button" fullWidth variant="contained">Entrar</Button>
+        <picture id="image">
+          <source media="(max-width: 420px)" srcset="./images/levit_black.png" />
+          <source media="(min-width: 421px)" srcset="./images/levit.png" />
+          <img src="./images/levit_black"/>
+        </picture>
       </Stack>
     </Box>
-    <img src="./images/levit.png" alt="" />
+    
     </>
   );
 }
