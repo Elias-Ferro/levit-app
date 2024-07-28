@@ -4,7 +4,7 @@ body {
 
 .outlined_input {
     margin: 10px auto;
-    padding: 10px;
+    padding-top: 10px;
     background: #D9D9D9;
     border-radius: 6px;
     text-decoration: none;
@@ -18,7 +18,7 @@ body {
 
 #button {
     height: 56px;
-    padding: 20px 20px 20px;
+    
 }
 
 img {
@@ -28,13 +28,18 @@ img {
 @media screen and (max-width: 420px){
     body {
         background-image: url('./images/tela_cadastro_mobile.png');
-        width: fit-content;
         object-fit: cover;
+        min-width: max-content;
+        min-height: max-content;
         object-position: center;
-        background-size: '100%';
+        max-width: "100%";
+        max-height: "100%";
     }
     #all {
-        width: 349px;
+        width: "100%";
+        min-width: cover;
+        height: "100%";
+        min-height: cover;
     }
     #title {
         color: black;
