@@ -27,7 +27,7 @@ img {
 
 @media screen and (max-width: 420px){
     body {
-        background-image: url('./images/tela_cadastro_mobile.png');
+        background-image: url('./images/cadastro_mobile.png');
         object-fit: cover;
         min-width: max-content;
         min-height: max-content;
