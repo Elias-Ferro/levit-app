@@ -11,6 +11,9 @@ import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
+import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
+import BalconyIcon from '@mui/icons-material/Balcony';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -18,6 +21,9 @@ function Home() {
   const iconsMinistry = {
     música: <MusicNoteIcon />,
     pregador: <ImportContactsIcon />,
+    teatro: <TheaterComedyIcon/>,
+    diaconato: <BalconyIcon/>,
+    infantil: <EmojiEmotionsIcon/>,
   };
 
   const getIconByName = (name) => {
@@ -29,6 +35,55 @@ function Home() {
       id: 1,
       day: "domingo",
       date: "06/08/2024",
+      listPersons: [
+        {
+          id: 1,
+          img: "",
+          name: "Elias",
+          ministry: "música",
+          function: "baterista",
+        },
+        {
+          id: 2,
+          img: "",
+          name: "Jeanderson",
+          ministry: "infantil",
+          function: "tecladista",
+        },
+        {
+          id: 3,
+          img: "",
+          name: "Werlleson",
+          ministry: "pregador",
+          function: "tecladista",
+        },
+      ],
+    },
+    {
+      id: 2,
+      day: "segunda",
+      date: "07/08/2024",
+      listPersons: [
+        {
+          id: 1,
+          img: "",
+          name: "Elias",
+          ministry: "teatro",
+          function: "líder",
+        },
+        {
+          id: 2,
+          img: "",
+          name: "Jeanderson",
+          ministry: "diaconato",
+          function: "tecladista",
+        },
+      ],
+    },
+    {
+      id: 3,
+      day: "terça",
+      date: "08/08/2024",
       listPersons: [
         {
           id: 1,
@@ -54,9 +109,9 @@ function Home() {
       ],
     },
     {
-      id: 2,
-      day: "segunda",
-      date: "07/08/2024",
+      id: 4,
+      day: "quarta",
+      date: "09/08/2024",
       listPersons: [
         {
           id: 1,
@@ -72,8 +127,99 @@ function Home() {
           ministry: "música",
           function: "tecladista",
         },
+        {
+          id: 3,
+          img: "",
+          name: "Werlleson",
+          ministry: "pregador",
+          function: "tecladista",
+        },
       ],
     },
+    {
+      id: 5,
+      day: "quinta",
+      date: "10/08/2024",
+      listPersons: [
+        {
+          id: 1,
+          img: "",
+          name: "Elias",
+          ministry: "música",
+          function: "baterista",
+        },
+        {
+          id: 2,
+          img: "",
+          name: "Jeanderson",
+          ministry: "música",
+          function: "tecladista",
+        },
+        {
+          id: 3,
+          img: "",
+          name: "Werlleson",
+          ministry: "pregador",
+          function: "tecladista",
+        },
+      ],
+    },
+    {
+      id: 6,
+      day: "sexta",
+      date: "11/08/2024",
+      listPersons: [
+        {
+          id: 1,
+          img: "",
+          name: "Elias",
+          ministry: "música",
+          function: "baterista",
+        },
+        {
+          id: 2,
+          img: "",
+          name: "Jeanderson",
+          ministry: "música",
+          function: "tecladista",
+        },
+        {
+          id: 3,
+          img: "",
+          name: "Werlleson",
+          ministry: "pregador",
+          function: "tecladista",
+        },
+      ],
+    },
+    {
+      id: 7,
+      day: "sábado",
+      date: "12/08/2024",
+      listPersons: [
+        {
+          id: 1,
+          img: "",
+          name: "Elias",
+          ministry: "música",
+          function: "baterista",
+        },
+        {
+          id: 2,
+          img: "",
+          name: "Jeanderson",
+          ministry: "música",
+          function: "tecladista",
+        },
+        {
+          id: 3,
+          img: "",
+          name: "Werlleson",
+          ministry: "pregador",
+          function: "tecladista",
+        },
+      ],
+    }
   ];
 
   return (
@@ -127,7 +273,7 @@ function Home() {
                         marginRight={"10px"}
                       >
                         {person.ministry[0].toUpperCase() +
-                          person.ministry.substring(1)}
+                          person.ministry.substring(1) + " |"}
                       </Typography>
                       <Typography variant="h6" color={"#FFFFFF"}>
                         {person.name}
