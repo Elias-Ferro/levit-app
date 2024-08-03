@@ -14,8 +14,13 @@ import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import BalconyIcon from '@mui/icons-material/Balcony';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import NoteAltOutlinedIcon from '@mui/icons-material/NoteAltOutlined';
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import ChurchOutlinedIcon from '@mui/icons-material/ChurchOutlined';
 
-function Home() {
+function Edit_Scale() {
   const [count, setCount] = useState(0);
 
   const iconsMinistry = {
@@ -224,6 +229,18 @@ function Home() {
 
   return (
     <>
+
+    <header className="header">
+      <img class="img" src="./images/levit.png" alt="LevitApp"/>
+      <Button className="btt" variant="contained" startIcon={<HomeOutlinedIcon/>}>Home</Button>
+      <Button className="btt" variant="contained" startIcon={<NoteAltOutlinedIcon/>} >Editar escalação</Button>
+      <Button className="btt" variant="contained" startIcon={<ChurchOutlinedIcon/>}>Ministérios</Button>
+      <Button className="btt" variant="contained" startIcon={<CalendarMonthOutlinedIcon/>}>Calendário</Button>
+      <Button className="btt" variant="contained" startIcon={<SettingsOutlinedIcon/>}>Configurações</Button>
+    </header>
+    
+    <hr className="hr" style={{color: "white"}}/>
+
       <div>
         <Stack
           display={"flex"}
@@ -311,7 +328,7 @@ function Home() {
   );
 }
 
-export default Home;
+export default Edit_Scale;
 
 {
   /* <AccordionDetails>

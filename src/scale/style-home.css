@@ -1,3 +1,22 @@
+.header {
+  padding: 0px 20px 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.img {
+  max-width: 220px;
+  width: 80%;
+}
+
+.hr {
+  color: #FFF;
+  margin-bottom: 65px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -61,4 +80,13 @@
 .MuiButtonBase-root {
   color: #FFF;
   background-color: #FFF;
+}
+
+.btt.MuiButtonBase-root {
+  max-width: 170px;
+  max-height: 60px;
+  min-width: 120px;
+  min-height: 80px;
+  width: 60%;
+  height: 40%;
 }

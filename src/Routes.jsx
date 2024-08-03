@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import Login from "./login/Login";
-import Home from "./home/Home";
+import Edit_Scale from "./scale/Edit_Scale.jsx";
 
 function RoutesComponent() {
   const [count, setCount] = useState(0);
@@ -10,7 +10,7 @@ function RoutesComponent() {
     <BrowserRouter>
     <Routes>
       <Route path="/login" Component={Login}/>
-      <Route path='/home' Component={Home}/>
+      <Route path='/edit_scale' Component={Edit_Scale}/>
     </Routes>
     </BrowserRouter>
   );
