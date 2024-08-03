@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style-home.css";
+import "./style_scale.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -230,18 +230,18 @@ function Edit_Scale() {
   return (
     <>
 
-    <header className="header">
+    <header className="header sticky">
       <img class="img" src="./images/levit.png" alt="LevitApp"/>
-      <Button className="btt" variant="contained" startIcon={<HomeOutlinedIcon/>}>Home</Button>
+      <Button style={{
+        fontSize: "1em"
+      }} className="btt" variant="contained" startIcon={<HomeOutlinedIcon/>}>Home</Button>
       <Button className="btt" variant="contained" startIcon={<NoteAltOutlinedIcon/>} >Editar escalação</Button>
       <Button className="btt" variant="contained" startIcon={<ChurchOutlinedIcon/>}>Ministérios</Button>
       <Button className="btt" variant="contained" startIcon={<CalendarMonthOutlinedIcon/>}>Calendário</Button>
       <Button className="btt" variant="contained" startIcon={<SettingsOutlinedIcon/>}>Configurações</Button>
     </header>
-    
-    <hr className="hr" style={{color: "white"}}/>
 
-      <div>
+      <div id='content'>
         <Stack
           display={"flex"}
           direction={"row"}
