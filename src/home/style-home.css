@@ -40,3 +40,25 @@
 .read-the-docs {
   color: #888;
 }
+
+.icon {
+  background-color: #FFF;
+  border-radius: 120px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+#root {
+  max-width: 1200px;
+  width: 80%;
+}
+
+.MuiButtonBase-root {
+  color: #FFF;
+  background-color: #FFF;
+}

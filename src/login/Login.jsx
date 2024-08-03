@@ -11,12 +11,14 @@ function Login() {
   return (
     <>
     <Box id="all">
-    <Typography id='title' fontSize={"32px"}>LOGIN</Typography>
+    <Typography id='title' fontSize={"32px"} color={"white"}>LOGIN</Typography>
     <br />
-      <Stack>
-        <TextField fullWidth className="outlined_input" label="email" variant="filled"/>
+      <Stack sx={{
+        minWidth: "252px"
+      }}>
+        <TextField className="outlined_input" label="Email" variant="filled"/>
         <br />
-        <TextField fullWidth type="password"  className="outlined_input" label="password" variant="filled"/>
+        <TextField type="password"  className="outlined_input" label="Password" variant="filled"/>
         <br />
         <Button id="button" fullWidth variant="contained">Entrar</Button>
           <img id='image' src="./images/levit.png"/>

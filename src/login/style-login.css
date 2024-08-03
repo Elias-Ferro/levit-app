@@ -3,11 +3,14 @@ body {
 }
 
 .outlined_input {
-    margin: 10px auto;
+    margin: 10px;
     padding-top: 10px;
     background: #D9D9D9;
     border-radius: 6px;
-    text-decoration: none;
+    text-decoration: none;  
+    max-width: 1000px;
+    width: 40%;
+    align-self: center;
 }
 
 #title{
@@ -18,11 +21,17 @@ body {
 
 #button {
     height: 56px;
-    
+    max-width: 1000px;
+    width: 40%;
+    align-self: center;
 }
 
 img {
     padding-top: 30px;
+    max-width: 500px;
+    min-width: 150px;
+    width: 35%;
+    align-self: center;
 }
 
 @media screen and (max-width: 420px){
@@ -42,8 +51,34 @@ img {
         min-height: cover;
     }
     #title {
-        color: black;
+        color: #D9D9D9;
         font-size: 36px;
         font-weight: 800;
+    }
+
+    .outlined_input {
+        margin: 10px;
+        padding-top: 10px;
+        background: #D9D9D9;
+        border-radius: 6px;
+        text-decoration: none;  
+        max-width: 1000px;
+        width: 75%;
+        align-self: center;
+    }
+
+    #button {
+        height: 56px;
+        max-width: 1000px;
+        width: 75%;
+        align-self: center;
+    }
+
+    img {
+        padding-top: 30px;
+        max-width: 600px;
+        min-width: 100px;
+        width: 80%;
+        align-self: center;
     }
 }
