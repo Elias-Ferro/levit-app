@@ -242,14 +242,9 @@ function Edit_Scale() {
     </header>
 
       <div id='content'>
-        <Stack
-          display={"flex"}
-          direction={"row"}
-          justifyContent={"space-between"}
-          marginBottom={"10px"}
-        >
-          <Typography variant="h4">Escala da semana</Typography>
-          <Button
+        <Stack className="above_accordions" >
+          <Typography id="above_accordions_title">Escala da semana</Typography>
+          <Button id="add_btt"
             startIcon={<AddCircleOutlineOutlinedIcon />}
             sx={{ color: "#FFF" }}
           >
