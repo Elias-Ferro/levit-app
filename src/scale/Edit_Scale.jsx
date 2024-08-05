@@ -6,7 +6,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
-import { Stack, Box, Typography, IconButton, Button } from "@mui/material";
+import { Stack, Typography, IconButton, Button } from "@mui/material";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
@@ -290,7 +290,7 @@ function Edit_Scale() {
                         marginRight={"10px"}
                       >
                         {person.ministry[0].toUpperCase() +
-                          person.ministry.substring(1) + " |"}
+                          person.ministry.substring(1)}
                       </Typography>
                       <Typography variant="h6" color={"#FFFFFF"}>
                         {person.name}

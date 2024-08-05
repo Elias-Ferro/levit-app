@@ -65,3 +65,19 @@
 .sticky + #content {
   padding-top: 50px;
 }
+
+@media screen and (max-width: 420px) {
+  #root {
+    max-width: 600px;
+    width: 80%;
+  }
+
+  .header {
+    padding: 0px;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+  }
+}
