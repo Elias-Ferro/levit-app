@@ -80,4 +80,8 @@
     align-items: center;
     display: none;
   }
+
+  #ministry {
+    display: none;
+  }
 }

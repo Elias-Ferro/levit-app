@@ -288,9 +288,10 @@ function Edit_Scale() {
                         variant="h6"
                         color={"#FFFFFF"}
                         marginRight={"10px"}
+                        id="ministry"
                       >
                         {person.ministry[0].toUpperCase() +
-                          person.ministry.substring(1)}
+person.ministry.substring(1)}
                       </Typography>
                       <Typography variant="h6" color={"#FFFFFF"}>
                         {person.name}
