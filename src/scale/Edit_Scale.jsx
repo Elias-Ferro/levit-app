@@ -231,7 +231,7 @@ function Edit_Scale() {
     <>
 
     <header className="header sticky">
-      <img class="img" src="./images/levit.png" alt="LevitApp"/>
+      <img class="image" src="./images/levit.png" alt="LevitApp"/>
       <Button style={{
         fontSize: "1em"
       }} className="btt" variant="contained" startIcon={<HomeOutlinedIcon/>}>Home</Button>
@@ -240,6 +240,10 @@ function Edit_Scale() {
       <Button className="btt" variant="contained" startIcon={<CalendarMonthOutlinedIcon/>}>Calendário</Button>
       <Button className="btt" variant="contained" startIcon={<SettingsOutlinedIcon/>}>Configurações</Button>
     </header>
+
+    <Stack class="logo_mobile">
+      <img id="logo_mobile_image" src="./images/levit_black.png" alt="Logo Levit" />
+    </Stack>
 
       <div id='content'>
         <Stack className="above_accordions" >

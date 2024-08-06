@@ -1,5 +1,7 @@
 body {
     background-image: url('images/cadastro.png');
+    background-repeat: no-repeat no-repeat;
+    background-color: black;
 }
 
 .outlined_input {
@@ -37,6 +39,7 @@ img {
 @media screen and (max-width: 420px){
     body {
         background-image: url('./images/cadastro_mobile.png');
+        background-repeat: no-repeat no-repeat;
         object-fit: cover;
         min-width: max-content;
         min-height: max-content;
