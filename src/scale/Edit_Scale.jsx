@@ -286,6 +286,7 @@ function Edit_Scale() {
                   flexDirection={"row"}
                   width="100%"
                   justifyContent={"space-between"}
+                  id='day_of_week'
                 >
                   {day.day.toUpperCase().slice(0, 3)}
                 </Stack>

@@ -7,6 +7,20 @@ body {
   background-image: url('images/cadastro.png');
   background-repeat: no-repeat no-repeat;
   background-color: #060610;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#day_of_week {
+  font-weight: 200;
+  font-size: 20px;
 }
 
 .head {
@@ -74,6 +88,7 @@ body {
 
 #above_accordions_title {
   font-size: 40px;
+  color: #FFF;
 }
 
 .btt.MuiButtonBase-root {
@@ -109,6 +124,7 @@ body {
 @media screen and (max-width: 420px) {
 
   body {
+    background-image: url('./images/cadastro_mobile.png');
     max-width: 420px;
     width: 100%;
     margin: 0;
