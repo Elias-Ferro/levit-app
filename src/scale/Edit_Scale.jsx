@@ -243,7 +243,16 @@ function Edit_Scale() {
     </header>
 
       <header id="mobile_header">
-        <Button startIcon={<MenuIcon/>} id="menu_icon"></Button>
+        <IconButton id="menu_icon" sx={{
+          p: 0,
+          border: 'none',
+          '&:focus': {
+            outline: 'none',
+          },
+        }}
+        edge="start"
+        color="inherit"
+        aria-label><MenuIcon sx={{fontSize: "40px"}}/></IconButton>
       </header>
 
     <Stack class="logo_mobile">

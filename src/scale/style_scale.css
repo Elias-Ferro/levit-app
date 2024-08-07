@@ -3,6 +3,12 @@
   src: url('./fonts/Timmana/Timmana-Regular.ttf');
 }
 
+body {
+  background-image: url('images/cadastro.png');
+  background-repeat: no-repeat no-repeat;
+  background-color: #060610;
+}
+
 .head {
   padding: 10px 20px 10px;
   background-position: center;
@@ -12,6 +18,10 @@
 }
 
 .mobile_header {
+  display: none;
+}
+
+#menu_icon {
   display: none;
 }
 
@@ -130,11 +140,15 @@
   }
 
   #menu_icon {
+    display: flex;
     color: #FFF;
     height: 100px;
     width: 100px;
+    border-radius: 0px;
     align-self: baseline;
-    
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
   }
 
   #ministry {
@@ -153,6 +167,7 @@
     align-self: center;
     align-items: center;
     padding-left: 36px;
+    padding-top: 0px;
   }
 
   .above_accordions {
