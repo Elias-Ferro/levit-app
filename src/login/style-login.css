@@ -46,6 +46,10 @@ img {
         object-position: center;
         max-width: "100%";
         max-height: "100%";
+        margin: 0;
+        display: flex;
+        place-items: center;
+        min-height: 100vh;
     }
     #all {
         width: "100%";

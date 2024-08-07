@@ -19,6 +19,7 @@ import NoteAltOutlinedIcon from '@mui/icons-material/NoteAltOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import ChurchOutlinedIcon from '@mui/icons-material/ChurchOutlined';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Edit_Scale() {
   const [count, setCount] = useState(0);
@@ -230,7 +231,7 @@ function Edit_Scale() {
   return (
     <>
 
-    <header className="header sticky">
+    <header className="head sticky">
       <img class="image" src="./images/levit.png" alt="LevitApp"/>
       <Button style={{
         fontSize: "1em"
@@ -240,6 +241,10 @@ function Edit_Scale() {
       <Button className="btt" variant="contained" startIcon={<CalendarMonthOutlinedIcon/>}>Calendário</Button>
       <Button className="btt" variant="contained" startIcon={<SettingsOutlinedIcon/>}>Configurações</Button>
     </header>
+
+      <header id="mobile_header">
+        <Button startIcon={<MenuIcon/>} id="menu_icon"></Button>
+      </header>
 
     <Stack class="logo_mobile">
       <img id="logo_mobile_image" src="./images/levit_black.png" alt="Logo Levit" />

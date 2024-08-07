@@ -3,12 +3,16 @@
   src: url('./fonts/Timmana/Timmana-Regular.ttf');
 }
 
-.header {
+.head {
   padding: 10px 20px 10px;
   background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.mobile_header {
+  display: none;
 }
 
 #logo_mobile {
@@ -30,8 +34,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 .image {
@@ -49,11 +51,6 @@
   justify-content: center;
   align-items: center;
   padding: 3px;
-}
-
-#root {
-  max-width: 1200px;
-  width: 80%;
 }
 
 .MuiButtonBase-root {
@@ -91,19 +88,53 @@
   padding-top: 50px;
 }
 
+#main_footer {
+  display: none;
+}
+
+#footer {
+  display: none;
+}
+
 @media screen and (max-width: 420px) {
+
+  body {
+    max-width: 420px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
   #root {
     max-width: 600px;
     width: 80%;
   }
 
-  .header {
+  .head {
     padding: 0px;
     background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     display: none;
+  }
+
+  .mobile_header {
+    display: flex;
+    align-items: baseline;
+    align-self: baseline;
+    align-content: baseline;
+  }
+
+  #menu_icon {
+    color: #FFF;
+    height: 100px;
+    width: 100px;
+    align-self: baseline;
+    
   }
 
   #ministry {
@@ -133,9 +164,15 @@
     font-weight: 800;
     font-size: 60px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   #add_btt {
     align-self: flex-end;
+  }
+
+  #content{
+    padding: 16px;
+    margin-bottom: 32px;
   }
 }
