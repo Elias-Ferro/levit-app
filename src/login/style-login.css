@@ -19,7 +19,7 @@ body {
     border-radius: 6px;
     text-decoration: none;  
     max-width: 1000px;
-    width: 40%;
+    width: 30%;
     align-self: center;
 }
 
@@ -34,13 +34,13 @@ body {
 #button {
     height: 56px;
     max-width: 1000px;
-    width: 40%;
+    width: 30%;
     align-self: center;
 }
 
 img {
     padding-top: 30px;
-    max-width: 500px;
+    max-width: 300px;
     min-width: 150px;
     width: 35%;
     align-self: center;
@@ -63,6 +63,7 @@ img {
         min-height: 100vh;
     }
     #all {
+        max-width: 420px;
         width: "100%";
         min-width: cover;
         height: "100%";
@@ -72,6 +73,7 @@ img {
         color: #D9D9D9;
         font-size: 36px;
         font-weight: 800;
+        margin-top: 0px;
     }
 
     .outlined_input {
