@@ -288,7 +288,7 @@ function Edit_Scale() {
                   justifyContent={"space-between"}
                   id='day_of_week'
                 >
-                  {day.day.toUpperCase().slice(0, 3)}
+                  {day.day.toUpperCase().slice(0, 3) + " - " + day.date}
                 </Stack>
               </AccordionSummary>
               {day.listPersons.map((person) => {
