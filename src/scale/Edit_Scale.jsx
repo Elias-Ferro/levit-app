@@ -20,9 +20,11 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import ChurchOutlinedIcon from '@mui/icons-material/ChurchOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
+import BasicModal from "../components/Modal";
 
 function Edit_Scale() {
   const [count, setCount] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const iconsMinistry = {
     música: <MusicNoteIcon />,
@@ -230,6 +232,7 @@ function Edit_Scale() {
 
   return (
     <>
+    <BasicModal open={open} setOpen={setOpen}/>
 
     <header className="head sticky">
       <img class="image" src="./images/levit.png" alt="LevitApp"/>
@@ -265,6 +268,7 @@ function Edit_Scale() {
           <Button id="add_btt"
             startIcon={<AddCircleOutlineOutlinedIcon />}
             sx={{ color: "#FFF" }}
+            onClick={() => setOpen(true)}
           >
             Adicionar
           </Button>
@@ -289,6 +293,12 @@ function Edit_Scale() {
                   id='day_of_week'
                 >
                   {day.day.toUpperCase().slice(0, 3) + " - " + day.date}
+                  <Button id="add_btt"
+            startIcon={<AddCircleOutlineOutlinedIcon />}
+            sx={{ color: "#FFF" }}
+            onClick={() => setOpen(true)}
+          >
+          </Button>
                 </Stack>
               </AccordionSummary>
               {day.listPersons.map((person) => {
