@@ -22,9 +22,9 @@ function Login() {
       <Stack sx={{
         minWidth: "252px"
       }}>
-        <TextField className="outlined_input" label="Email" variant="filled"/>
+        <TextField defaultValue={"membro@email.com"} className="outlined_input" label="Email" variant="filled"/>
         <br />
-        <TextField type="password"  className="outlined_input" label="Password" variant="filled"/>
+        <TextField defaultValue={"********I"} type="password"  className="outlined_input" label="Password" variant="filled"/>
         <br />
         <Button id="button" fullWidth variant="contained" onClick={goToHome}>Entrar</Button>
           <img id='image' src="./images/levit.png"/>
