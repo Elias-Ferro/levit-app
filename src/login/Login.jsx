@@ -4,9 +4,15 @@ import Box from '@mui/material/Box';
 import { Stack, Typography } from "@mui/material";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [count, setCount] = useState(0);
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate('/edit_scale')
+  }
 
   return (
     <>
@@ -20,7 +26,7 @@ function Login() {
         <br />
         <TextField type="password"  className="outlined_input" label="Password" variant="filled"/>
         <br />
-        <Button id="button" fullWidth variant="contained">Entrar</Button>
+        <Button id="button" fullWidth variant="contained" onClick={goToHome}>Entrar</Button>
           <img id='image' src="./images/levit.png"/>
       </Stack>
     </Box>
