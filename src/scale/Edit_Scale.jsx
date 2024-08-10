@@ -20,6 +20,7 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import ChurchOutlinedIcon from '@mui/icons-material/ChurchOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 import BasicModal from "../components/Modal";
+import SidebarMenu from "../components/Collapse"
 
 function Edit_Scale() {
   const [open, setOpen] = useState(false);
@@ -353,21 +354,7 @@ function Edit_Scale() {
       </header>
 
       <header id="mobile_header">
-        <IconButton
-          id="menu_icon"
-          sx={{
-            p: 0,
-            border: "none",
-            "&:focus": {
-              outline: "none",
-            },
-          }}
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-        >
-          <MenuIcon sx={{ fontSize: "40px" }} />
-        </IconButton>
+        <SidebarMenu />
       </header>
 
       <Stack className="logo_mobile">

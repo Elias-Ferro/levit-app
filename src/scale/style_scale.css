@@ -34,7 +34,7 @@ body {
   align-items: center;
 }
 
-.mobile_header {
+#mobile_header {
   display: none;
 }
 
