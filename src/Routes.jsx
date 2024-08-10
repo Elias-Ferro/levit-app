@@ -10,7 +10,7 @@ function RoutesComponent() {
     <BrowserRouter>
     <Routes>
       <Route path="/login" Component={Login}/>
-      <Route path='/' Component={Edit_Scale}/>
+      <Route path='/edit_scale' Component={Edit_Scale}/>
     </Routes>
     </BrowserRouter>
   );
