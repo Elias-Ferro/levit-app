@@ -328,7 +328,7 @@ function Edit_Scale() {
           variant="contained"
           startIcon={<NoteAltOutlinedIcon />}
         >
-          Editar escalação
+          Editar escala
         </Button>
         <Button
           className="btt"

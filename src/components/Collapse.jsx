@@ -40,19 +40,22 @@ const SidebarMenu = () => {
         >
           <List>
             <ListItem>
-              <ListItemText primary="Item 1" />
+              <ListItemText primary="Home" />
             </ListItem>
             <ListItem>
-              <ListItemText primary="Item 2" />
+              <ListItemText primary="Editar escala" />
             </ListItem>
             <ListItem>
-              <ListItemText primary="Item 3" />
+              <ListItemText primary="Ministérios" />
+            </ListItem>
+            <ListItem>
+              <ListItemText primary="Calendário" />
             </ListItem>
           </List>
           <Divider />
           <List>
-            <ListItem button>
-              <ListItemText primary="Item 4" />
+            <ListItem >
+              <ListItemText primary="Configurações" />
             </ListItem>
           </List>
         </div>
