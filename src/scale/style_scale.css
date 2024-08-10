@@ -151,7 +151,7 @@ body {
     display: none;
   }
 
-  .mobile_header {
+  #mobile_header {
     display: flex;
     align-items: baseline;
     align-self: baseline;
