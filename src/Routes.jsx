@@ -9,7 +9,7 @@ function RoutesComponent() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/login" Component={Login}/>
+      <Route path="/" Component={Login}/>
       <Route path='/edit_scale' Component={Edit_Scale}/>
     </Routes>
     </BrowserRouter>
