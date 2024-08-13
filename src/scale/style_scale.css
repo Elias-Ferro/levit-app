@@ -111,6 +111,14 @@ body {
   padding: 16px;
 }
 
+#date {
+  display: flex;
+}
+
+#date_mobile {
+  display: none;
+}
+
 .sticky + #content {
   padding-top: 50px;
 }
@@ -202,6 +210,14 @@ body {
 
   #add_btt {
     align-self: flex-end;
+  }
+
+  #date {
+    display: none;
+  }
+
+  #date_mobile {
+    display: flex;
   }
 
   #content{

@@ -385,7 +385,12 @@ function Edit_Scale() {
                 justifyContent={"space-between"}
                 id="day_of_week"
               >
-                {day.day.toUpperCase().slice(0, 3) + " - " + day.date}
+                <div id="date">
+                  {day.day.toUpperCase().slice(0, 3) + " - " + day.date}
+                </div>
+                <div id="date_mobile">
+                  {day.day.toUpperCase().slice(0, 3)}
+                </div>
                 <Button
                   id="add_btt"
                   startIcon={<AddCircleOutlineOutlinedIcon />}
