@@ -1,0 +1,21 @@
+/* src/pages/Home.css */
+.swiper-container {
+    width: 100%;
+    height: 400px; /* Ajuste a altura conforme necessário */
+  }
+
+.swiper {
+    height: 100px;
+}
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajuste a altura para se adequar ao container */
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+  }
