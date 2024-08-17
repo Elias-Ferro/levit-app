@@ -1,9 +1,5 @@
-import { useState } from "react";
-import Box from '@mui/material/Box';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Header from '../components/Header'
-import { Stack, Typography } from "@mui/material";
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -13,6 +9,26 @@ function Home() {
     <>
     <title>Home</title>
     <Header/>
+    <div style={{ padding: '20px' }}></div>
+        <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            navigation
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            style={{ width: '100%', height: '400px' }}
+        >
+            <SwiperSlide>
+            <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </SwiperSlide>
+            <SwiperSlide>
+            <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </SwiperSlide>
+            <SwiperSlide>
+            <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </SwiperSlide>
+        </Swiper>
+    <div/>
     </>
   );
 }
