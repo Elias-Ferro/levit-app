@@ -11,11 +11,12 @@ function Login() {
   const navigate = useNavigate();
 
   const goToHome = () => {
-    navigate('/edit_scale')
+    navigate('/home')
   }
 
   return (
     <>
+    <title>Login</title>
     <Box id="all">
     <Typography id='title' fontSize={"32px"} color={"white"}>LOGIN</Typography>
     <br />

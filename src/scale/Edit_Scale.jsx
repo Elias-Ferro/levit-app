@@ -276,6 +276,7 @@ function Edit_Scale() {
 
   return (
     <>
+    <title>Edit Scale</title>
       <BasicModal
         open={open}
         setOpen={setOpen}

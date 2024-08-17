@@ -6,8 +6,18 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import ChurchOutlinedIcon from '@mui/icons-material/ChurchOutlined';
 import SidebarMenu from "./Collapse"
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const goToEditScale = () => {
+    navigate('/edit_scale')
+  }
+
+  const goToHome = () => {
+    navigate('/home')
+  }
 
   return (
     <div>
@@ -20,6 +30,7 @@ const Header = () => {
           className="btt"
           variant="contained"
           startIcon={<HomeOutlinedIcon />}
+          onClick={goToHome}
         >
           Home
         </Button>
@@ -27,6 +38,7 @@ const Header = () => {
           className="btt"
           variant="contained"
           startIcon={<NoteAltOutlinedIcon />}
+          onClick={goToEditScale}
         >
           Escalas
         </Button>
