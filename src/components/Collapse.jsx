@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
 import { IconButton, Drawer, List, ListItem, ListItemText, Divider } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import {useNavigate} from "react-router-dom";
 
 const SidebarMenu = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate('/home')
+  }
+
+  const goToEditScale = () => {
+    navigate('/edit_scale')
+  }
 
   const toggleDrawer = (open) => () => {
     setOpen(open);
@@ -40,10 +50,10 @@ const SidebarMenu = () => {
         >
           <List>
             <ListItem>
-              <ListItemText primary="Home" />
+              <ListItemText primary="Home" onClick={goToHome}/>
             </ListItem>
             <ListItem>
-              <ListItemText primary="Editar escala" />
+              <ListItemText primary="Editar escala" onClick={goToEditScale}/>
             </ListItem>
             <ListItem>
               <ListItemText primary="Ministérios" />

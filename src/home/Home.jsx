@@ -37,7 +37,7 @@ function Home() {
                   borderRadius: '8px'
                 }}
               >
-                <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Bem-vindo ao <span style={{color: "#2130B9"}}>Levit</span></h1>
+                <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Bem-vindo ao <span style={{color: "#2130B9"}}>Levit!</span></h1>
                 <p style={{ fontSize: '2rem' }}>
                   O Levit é a solução ideal para gerenciar as escalas da sua igreja de forma eficiente e prática.
                   Organize os dias da semana e mantenha tudo sob controle com facilidade. 
